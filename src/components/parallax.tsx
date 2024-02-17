@@ -6,9 +6,9 @@ import {
   useTransform,
   useMotionValue,
   useVelocity,
+  MotionValue,
   useAnimationFrame,
 } from "framer-motion";
-import type { MotionValue } from "framer-motion";
 import { wrap } from "@motionone/utils";
 
 interface ParallaxProps {
@@ -20,7 +20,7 @@ export default function ParallaxText({
   children,
   baseVelocity = 100,
 }: ParallaxProps) {
-  const baseX: MotionValue<number> = useMotionValue(0);
+  const baseX: MotionValue<number> = useMotionValue(0); // Explicitly typing baseX as MotionValue<number>
   const { scrollY } = useScroll();
   const scrollVelocity = useVelocity(scrollY);
   const smoothVelocity = useSpring(scrollVelocity, {
@@ -45,7 +45,7 @@ export default function ParallaxText({
 
     moveBy += directionFactor.current * moveBy * velocityFactor.get();
 
-    baseX.set(baseX.get() + moveBy);
+    baseX.set(baseX.get() + moveBy); // Ensure baseX is MotionValue<number>
   });
 
   return (

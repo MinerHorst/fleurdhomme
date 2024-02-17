@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import SpringComponent from "./perfumes/spring";
 import SummerComponent from "./perfumes/summer";
 import AutumnComponent from "./perfumes/autumn";
