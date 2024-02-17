@@ -8,7 +8,6 @@ import {
   useVelocity,
   useAnimation,
 } from "framer-motion";
-import type { MotionValue } from "framer-motion";
 import { wrap } from "@motionone/utils";
 
 interface ParallaxProps {
@@ -61,7 +60,7 @@ export default function ParallaxText({
         animate={controls}
         style={{ x }}
       >
-        {[...Array(7)].map((_, i) => (
+        {Array.from({ length: 7 }, (_, i) => (
           <span key={i}>{children} </span>
         ))}
       </motion.div>
