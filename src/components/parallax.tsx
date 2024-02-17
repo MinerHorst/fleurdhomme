@@ -20,7 +20,7 @@ export default function ParallaxText({
   children,
   baseVelocity = 100,
 }: ParallaxProps) {
-  const baseX: MotionValue<any> = useMotionValue(0); // Explicitly typing baseX as MotionValue<number>
+  const baseX: MotionValue<number> = useMotionValue(0); // Explicitly typing baseX as MotionValue<number>
   const { scrollY } = useScroll();
   const scrollVelocity = useVelocity(scrollY);
   const smoothVelocity = useSpring(scrollVelocity, {
