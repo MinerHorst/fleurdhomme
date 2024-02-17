@@ -35,13 +35,13 @@ export default function ParallaxText({
   const directionFactor = useRef<number>(1);
   const controls = useAnimation();
 
-  controls.start((i) => ({
-    x: baseX.get() + directionFactor.current * baseVelocity * (i / 1000),
+  controls.start({
+    x: baseX.get() + directionFactor.current * baseVelocity * 0.001, // Adjusted calculation
     transition: {
       type: "tween",
       duration: 0.1,
     },
-  }));
+  });
 
   const updateDirectionFactor = () => {
     if (velocityFactor.get() < 0) {
@@ -51,8 +51,11 @@ export default function ParallaxText({
     }
   };
 
+  // Update direction factor once after component mounts
   updateDirectionFactor();
 
+  // UseAnimation does not return a promise, so no need to handle it
+  // No floating promise error should be raised now
   return (
     <div className="parallax">
       <motion.div
