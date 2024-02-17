@@ -6,8 +6,9 @@ import {
   useTransform,
   useMotionValue,
   useVelocity,
-  useAnimation,
+  useAnimationFrame,
 } from "framer-motion";
+import type { MotionValue } from "framer-motion";
 import { wrap } from "@motionone/utils";
 
 interface ParallaxProps {
@@ -19,7 +20,7 @@ export default function ParallaxText({
   children,
   baseVelocity = 100,
 }: ParallaxProps) {
-  const baseX = useMotionValue(0);
+  const baseX: MotionValue<number> = useMotionValue(0) as MotionValue<number>;
   const { scrollY } = useScroll();
   const scrollVelocity = useVelocity(scrollY);
   const smoothVelocity = useSpring(scrollVelocity, {
@@ -33,39 +34,31 @@ export default function ParallaxText({
   const x = useTransform(baseX, (v) => `${wrap(-10, -45, v)}%`);
 
   const directionFactor = useRef<number>(1);
-  const controls = useAnimation();
 
-  controls.start({
-    x: baseX.get() + directionFactor.current * baseVelocity * 0.001, // Adjusted calculation
-    transition: {
-      type: "tween",
-      duration: 0.1,
-    },
-  });
+  useAnimationFrame((t, delta) => {
+    let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
 
-  const updateDirectionFactor = () => {
     if (velocityFactor.get() < 0) {
       directionFactor.current = -1;
     } else if (velocityFactor.get() > 0) {
       directionFactor.current = 1;
     }
-  };
 
-  // Update direction factor once after component mounts
-  updateDirectionFactor();
+    moveBy += directionFactor.current * moveBy * velocityFactor.get();
 
-  // UseAnimation does not return a promise, so no need to handle it
-  // No floating promise error should be raised now
+    baseX.set(baseX.get() + moveBy);
+  });
+
   return (
     <div className="parallax">
-      <motion.div
-        className="scroller montserrat font-bold"
-        animate={controls}
-        style={{ x }}
-      >
-        {Array.from({ length: 7 }, (_, i) => (
-          <span key={i}>{children} </span>
-        ))}
+      <motion.div className="scroller montserrat font-bold" style={{ x }}>
+        <span>{children} </span>
+        <span>{children} </span>
+        <span>{children} </span>
+        <span>{children} </span>
+        <span>{children} </span>
+        <span>{children} </span>
+        <span>{children} </span>
       </motion.div>
     </div>
   );
