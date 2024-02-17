@@ -27,9 +27,14 @@ export default function ParallaxText({
     damping: 50,
     stiffness: 400,
   });
-  const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 5], {
-    clamp: false,
-  }) as MotionValue<number>;
+  const velocityFactor = useTransform(
+    smoothVelocity as MotionValue<number>,
+    [0, 1000],
+    [0, 5],
+    {
+      clamp: false,
+    },
+  );
 
   const x = useTransform(baseX, (v) => `${wrap(-10, -45, v)}%`);
 
