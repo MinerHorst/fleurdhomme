@@ -6,8 +6,8 @@ import {
   useTransform,
   useMotionValue,
   useVelocity,
-  MotionValue,
   useAnimationFrame,
+  MotionValue,
 } from "framer-motion";
 import { wrap } from "@motionone/utils";
 
