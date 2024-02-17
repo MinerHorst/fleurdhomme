@@ -20,7 +20,7 @@ export default function ParallaxText({
   children,
   baseVelocity = 100,
 }: ParallaxProps) {
-  const baseX = useMotionValue(0) as MotionValue<number>;
+  const baseX = useMotionValue(0);
   const { scrollY } = useScroll();
   const scrollVelocity = useVelocity(scrollY);
   const smoothVelocity = useSpring(scrollVelocity, {
@@ -29,7 +29,7 @@ export default function ParallaxText({
   });
   const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 5], {
     clamp: false,
-  });
+  }) as MotionValue<number>;
 
   const x = useTransform(baseX, (v) => `${wrap(-10, -45, v)}%`);
 
