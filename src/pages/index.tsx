@@ -34,7 +34,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Fleur d'Homme</title>
+        <title>Fleur d&apos;Homme</title>
         <meta
           name="description"
           content="Fleur d'Homme the new fragrance for men with enriching scents."
@@ -43,7 +43,7 @@ export default function Home() {
       </Head>
       <div className="cursor">
         <div className="cursor__inner">
-          {[...Array(25 * 25)].map((_, index) => {
+          {Array.from({ length: 25 * 25 }).map((_, index) => {
             const isHovered = hoverHistory.includes(index);
             const itemColor = isHovered ? getRandomColor() : "";
             return (

@@ -16,7 +16,7 @@ export default function HeroComponent() {
             className="copperplate w-[80%] text-center text-white [font-size:_clamp(1em,1.25vw,3em)] md:py-20"
             speed={-10}
           >
-            <h1>Fleur d'homme</h1>
+            <h1>Fleur d&apos;homme</h1>
           </Parallax>
         </div>
         <div className="absolute left-0 top-0 flex h-screen w-screen flex-col items-center justify-center">
@@ -25,9 +25,9 @@ export default function HeroComponent() {
             speed={+20}
           >
             <h1>
-              We're more than just a perfume brand; we're artisans who weave
-              narratives into every spray, crafting experiences that linger long
-              after the scent fades.
+              We&apos;re more than just a perfume brand; we&apos;re artisans who
+              weave narratives into every spray, crafting experiences that
+              linger long after the scent fades.
             </h1>
           </Parallax>
         </div>

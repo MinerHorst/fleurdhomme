@@ -7,6 +7,7 @@ import {
   useMotionValue,
   useVelocity,
   useAnimationFrame,
+  MotionValue,
 } from "framer-motion";
 import { wrap } from "@motionone/utils";
 
@@ -19,7 +20,7 @@ export default function ParallaxText({
   children,
   baseVelocity = 100,
 }: ParallaxProps) {
-  const baseX = useMotionValue(0);
+  const baseX: MotionValue<number> = useMotionValue(0); // Explicitly typing baseX
   const { scrollY } = useScroll();
   const scrollVelocity = useVelocity(scrollY);
   const smoothVelocity = useSpring(scrollVelocity, {
