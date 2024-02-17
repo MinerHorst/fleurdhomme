@@ -27,7 +27,7 @@ export default function ParallaxText({
     damping: 50,
     stiffness: 400,
   });
-  const velocityFactor: MotionValue<number> = useTransform(
+  const velocityFactor: MotionValue<any> = useTransform(
     smoothVelocity,
     [0, 1000],
     [0, 5],
