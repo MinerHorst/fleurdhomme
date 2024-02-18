@@ -3,8 +3,8 @@ import HeroComponent from "~/components/hero";
 import InformationComponent from "~/components/information";
 import PerfumeComponent from "~/components/perfume";
 import { useState } from "react";
-import QuizComponent from "~/components/quiz";
 import FooterComponent from "~/components/footer";
+import SampleComponent from "~/components/sample";
 
 const MAX_HOVER_HISTORY = 10;
 
@@ -61,7 +61,7 @@ export default function Home() {
         <HeroComponent />
         <InformationComponent />
         <PerfumeComponent />
-        <QuizComponent />
+        <SampleComponent />
         <FooterComponent />
       </main>
     </>

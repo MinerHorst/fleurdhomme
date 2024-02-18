@@ -258,27 +258,3 @@ img {
   display: block;
   margin-right: 30px;
 }
-
-.quiz_grid {
-  z-index: 50;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  opacity: .8;
-}
-
-.quiz_grid__inner {
-  display: grid;
-  grid-template-columns: repeat(25, calc(100vw / 25));
-}
-
-.quiz_grid__inner__item {
-  width: calc(100vw / 25);
-  height: calc(100vw / 25);
-  background: #e7d5cb;
-  opacity: 0.1;
-  z-index: 51;
-  transition: background-color 0.3s;
-}
