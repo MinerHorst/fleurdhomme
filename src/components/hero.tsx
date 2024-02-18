@@ -21,7 +21,7 @@ export default function HeroComponent() {
         </div>
         <div className="absolute left-0 top-0 flex h-screen w-screen flex-col items-center justify-center">
           <Parallax
-            className="montserrat w-[80%] text-center font-bold text-white md:pt-20 md:[font-size:_clamp(1em,2vw,3em)]"
+            className="montserrat w-[80%] text-center text-white md:pt-20 md:[font-size:_clamp(1em,2vw,3em)]"
             speed={+20}
           >
             <h1>
