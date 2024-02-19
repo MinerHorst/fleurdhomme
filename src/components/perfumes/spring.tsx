@@ -6,12 +6,12 @@ import spring from "../../../public/spring.png";
 export default function SpringComponent() {
   return (
     <>
-      <section className="grid h-screen w-screen grid-cols-6 grid-rows-6 bg-white py-2 text-black">
-        <div className="0 dshadow-xl z-50 col-span-6 row-span-1 flex flex-col space-y-2 bg-white shadow-xl shadow-white">
+      <section className="flex h-screen w-screen flex-col items-end bg-white py-2 text-black">
+        <div className="z-50 col-span-6 flex h-fit w-full flex-col space-y-2 bg-white shadow-xl shadow-white">
           <ParallaxText baseVelocity={-1}>Fleur d&apos;Homme</ParallaxText>
           <ParallaxText baseVelocity={1}>Spring Spring</ParallaxText>
         </div>
-        <div className="z-50 col-span-full row-span-1 bg-white shadow-xl shadow-white md:col-span-2 md:col-start-5 md:row-span-1 md:space-y-10">
+        <div className="z-50 h-fit w-[35%] bg-white shadow-xl shadow-white md:col-span-2 md:col-start-5">
           <p className="montserrat z-50 hidden flex-col space-y-2 md:flex">
             The Fleur d&apos;Homme Spring blend breaks free from the ordinary,
             infusing the classic with the unexpected. Oudh, renowned for its
@@ -27,11 +27,7 @@ export default function SpringComponent() {
           </div>
         </div>
         <div className="absolute left-0 top-0 z-10">
-          <Image
-            src={spring}
-            alt="drawing of a spring scene."
-            className="inverted"
-          />
+          <Image src={spring} alt="drawing of a spring scene." />
         </div>
       </section>
     </>
