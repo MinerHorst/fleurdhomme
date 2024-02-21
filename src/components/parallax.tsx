@@ -12,11 +12,13 @@ import type { MotionValue } from "framer-motion";
 import { wrap } from "@motionone/utils";
 
 interface ParallaxProps {
+  fontsize?: number;
   children: string;
   baseVelocity: number;
 }
 
 export default function ParallaxText({
+  fontsize = 100,
   children,
   baseVelocity = 100,
 }: ParallaxProps) {
@@ -56,14 +58,17 @@ export default function ParallaxText({
 
   return (
     <div className="parallax">
-      <motion.div className="scroller montserrat font-bold" style={{ x }}>
+      <motion.div
+        className={`scroller montserrat font-bold`}
+        style={{ fontSize: `${fontsize}px`, x }}
+      >
         <span>{children} </span>
         <span>{children} </span>
         <span>{children} </span>
         <span>{children} </span>
         <span>{children} </span>
         <span>{children} </span>
-        <span>{children} </span>
+        <span>{fontsize} </span>
       </motion.div>
     </div>
   );

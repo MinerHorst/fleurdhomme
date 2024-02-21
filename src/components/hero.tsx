@@ -31,14 +31,6 @@ export default function HeroComponent() {
             </h1>
           </Parallax>
         </div>
-        <div className="h-full w-full">
-          <Image
-            loading="lazy"
-            src={clouds}
-            alt="Hero clouds background"
-            className="h-full w-full"
-          ></Image>
-        </div>
       </div>
     </>
   );
