@@ -1,6 +1,4 @@
-import Image from "next/image";
 import React from "react";
-import clouds from "../../public/clouds.png";
 import Spline from "@splinetool/react-spline";
 import { Parallax } from "react-scroll-parallax";
 import ParallaxText from "./parallax";

@@ -3,7 +3,6 @@ import ParallaxText from "../parallax";
 import Image from "next/image";
 import springperfume from "../../../public/springperfume.png";
 import { Parallax } from "react-scroll-parallax";
-import Spline from "@splinetool/react-spline";
 
 export default function SummerComponent() {
   return (
