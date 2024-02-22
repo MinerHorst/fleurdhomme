@@ -1,30 +1,15 @@
 import React from "react";
+import ParallaxText from "./parallax";
 
 export default function FooterComponent() {
   return (
     <div>
-      <div className="justify- relative flex h-[98vh] w-screen flex-col items-center justify-between pt-10 text-white">
-        <div className="flex flex-col items-center justify-center space-y-20 text-center">
-          <h4 className="flex flex-col items-center justify-center">
-            <p className="copperplate">Fleur d&apos;homme</p>
-            <p className="montserrat font-bold uppercase md:[font-size:_clamp(2em,4vw,6em)]">
-              More than just a brand.
-            </p>
-          </h4>
-        </div>
-
+      <div className="justify- relative flex h-[98vh] w-screen flex-col items-center justify-end pt-10 text-white">
         <h2 className="montserrat z-50 space-y-4 text-center">
-          <p className="montserrat">Developed by Luis Keßler</p>
-          <p>
-            Deeply inspired by{" "}
-            <a
-              className="text-muted-foreground"
-              target="_blank"
-              href="https://abstract-intelligence.com/"
-            >
-              abstract-intelligence.com
-            </a>
+          <p className="text-white [font-size:_clamp(1em,3vw,5em)]">
+            More than just another
           </p>
+          <h3 className="[font-size:_clamp(2em,12vw,16em)]">Brand.</h3>
         </h2>
       </div>
     </div>

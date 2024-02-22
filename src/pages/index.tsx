@@ -57,7 +57,7 @@ export default function Home() {
           })}
         </div>
       </div>
-      <main className="flex flex-col">
+      <main className="flex flex-col overflow-x-hidden">
         <HeroComponent />
         <InformationComponent />
         <PerfumeComponent />
