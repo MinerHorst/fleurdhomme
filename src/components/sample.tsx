@@ -13,12 +13,12 @@ export default function SampleComponent() {
           className="h-full w-full"
         ></Image>
       </div>
-      <h4 className="z-20 flex h-[60%] w-[80%] flex-col uppercase">
-        <p>You might ask yourself.</p>
-        <p className="w-fit font-bold leading-none md:[font-size:_clamp(2em,11vw,15em)]">
+      <div className="z-20 flex h-[60%] w-[80%] flex-col uppercase">
+        <div>You might ask yourself.</div>
+        <div className="w-fit font-bold leading-none md:[font-size:_clamp(2em,11vw,15em)]">
           How do I find the one that fits me best?
-        </p>
-      </h4>
+        </div>
+      </div>
       <div className="z-20 grid h-[30%] w-[80%] grid-cols-5 border">
         <div className="col-span-4 col-start-2 border"></div>
       </div>

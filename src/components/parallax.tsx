@@ -1,4 +1,5 @@
-import { useRef } from "react";
+import React, { ReactNode, useRef } from "react";
+
 import {
   motion,
   useScroll,
@@ -13,7 +14,7 @@ import { wrap } from "@motionone/utils";
 
 interface ParallaxProps {
   fontsize?: number;
-  children: string;
+  children: ReactNode;
   baseVelocity: number;
 }
 
@@ -62,13 +63,13 @@ export default function ParallaxText({
         className={`scroller montserrat font-bold`}
         style={{ fontSize: `${fontsize}px`, x }}
       >
-        <span>{children} </span>
-        <span>{children} </span>
-        <span>{children} </span>
-        <span>{children} </span>
-        <span>{children} </span>
-        <span>{children} </span>
-        <span>{fontsize} </span>
+        <div className="px-2">{children} </div>
+        <div className="px-2">{children} </div>
+        <div className="px-2">{children} </div>
+        <div className="px-2">{children} </div>
+        <div className="px-2">{children} </div>
+        <div className="px-2">{children} </div>
+        <div className="px-2">{children} </div>
       </motion.div>
     </div>
   );

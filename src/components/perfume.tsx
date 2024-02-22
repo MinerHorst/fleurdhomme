@@ -17,10 +17,10 @@ export default function PerfumeComponent() {
       <div className="h-[350vh]">
         <SummerPerfumeComponent />
       </div>
-      <div className="">
+      <div className="sticky top-0 z-[52] h-[150vh]">
         <AutumnComponent />
       </div>
-      <div className="">
+      <div>
         <WinterComponent />
       </div>
     </div>
