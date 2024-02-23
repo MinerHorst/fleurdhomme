@@ -1,7 +1,6 @@
 import React from "react";
 import ParallaxText from "../parallax";
 import Image from "next/image";
-import springperfume from "../../../public/springperfume.png";
 import { Parallax } from "react-scroll-parallax";
 
 import autumn1 from "../../../public/autumn1.jpeg";
@@ -120,7 +119,7 @@ export default function AutumnComponent() {
         <div className="grid h-screen grid-cols-3 bg-black">
           <div className="col-span-1 space-y-4">
             <p className="montserrat px-2 text-white">
-              The Fleur d'Homme Autumn blend defies convention, melding
+              The Fleur d&apos;Homme Autumn blend defies convention, melding
               tradition with innovation. Oudh, celebrated for its intricate
               nature, reinvents the commonplace into something remarkable.
               Envision yourself amidst an autumnal tableau, enveloped by warm
@@ -128,7 +127,7 @@ export default function AutumnComponent() {
               Oudh accords, to whisk you away to a realm of autumnal charm.
             </p>
             <button className="z-[56] h-9 w-[75%] bg-white text-black">
-              Get Fleur d'Homme Autumn.
+              Get Fleur d&apos;Homme Autumn.
             </button>
           </div>
           <div className="col-span-2">

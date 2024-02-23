@@ -1,7 +1,6 @@
 import React from "react";
 import Spline from "@splinetool/react-spline";
 import { Parallax } from "react-scroll-parallax";
-import ParallaxText from "./parallax";
 
 export default function HeroComponent() {
   return (

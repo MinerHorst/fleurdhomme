@@ -2,7 +2,6 @@ import React from "react";
 
 import Image from "next/image";
 
-import summer1 from "../../../public/summer1.jpeg";
 import summer2 from "../../../public/summer2.jpeg";
 import summer3 from "../../../public/summer3.jpeg";
 import summer4 from "../../../public/summer4.webp";
@@ -49,15 +48,15 @@ export default function SummerPerfumeComponent() {
       </div>
       <div className="montserrat col-start-3 row-span-1 row-start-6 space-y-4 bg-black text-center text-white">
         <p>
-          The Fleur d'Homme Summer blend breaks away from the usual, blending
-          the timeless with the unexpected. Oudh, famed for its complexity,
-          reimagines the familiar into an extraordinary experience. Imagine
-          yourself amidst a sun-kissed landscape, surrounded by lively
+          The Fleur d&apos;Homme Summer blend breaks away from the usual,
+          blending the timeless with the unexpected. Oudh, famed for its
+          complexity, reimagines the familiar into an extraordinary experience.
+          Imagine yourself amidst a sun-kissed landscape, surrounded by lively
           fragrances. Let our scent, with its refreshing breeze and subtle Oudh
           undertones, transport you to a realm of summer enchantment.
         </p>
         <button className="z-[56] h-9 w-[75%] bg-white text-black">
-          Get Fleur d'Homme Summer.
+          Get Fleur d&apos;Homme Summer.
         </button>
       </div>
     </section>

@@ -1,7 +1,5 @@
 import React from "react";
 import ParallaxText from "../parallax";
-import Image from "next/image";
-import summer from "../../../public/summer.png";
 
 export default function SummerComponent() {
   return (

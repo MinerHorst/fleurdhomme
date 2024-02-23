@@ -122,7 +122,7 @@ export default function SummerComponent() {
               undertones, transport you to a new dimension of springtime allure.
             </p>
             <button className="z-[56] h-9 w-[75%] bg-white text-black">
-              Get Fleur d'Homme Spring.
+              Get Fleur d&apos;Homme Spring.
             </button>
           </div>
         </div>

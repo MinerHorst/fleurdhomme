@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import clouds from "../../public/clouds.png";
-import sample from "../../public/sample.png";
 
 export default function SampleComponent() {
   return (
