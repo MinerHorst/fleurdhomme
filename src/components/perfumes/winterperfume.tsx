@@ -27,8 +27,12 @@ export default function WinterPerfumeComponent() {
         </div>
       </div>
       <div className="col-span-1 col-start-3 flex flex-col justify-end">
-        <div className="flex h-[60vh] bg-red-500">
-          <Image src={winter2} alt="winter landscape"></Image>
+        <div className="flex h-[60vh] bg-black">
+          <Image
+            src={winter2}
+            className="h-full w-full"
+            alt="winter landscape"
+          ></Image>
         </div>
       </div>
     </section>
