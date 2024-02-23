@@ -62,7 +62,7 @@ export default function AutumnComponent() {
 
               <div className="montserrat relative flex h-[50%] text-white">
                 <div>
-                  The Fleur d'Homme Autumn blend defies convention, melding
+                  The Fleur d&apos;Homme Autumn blend defies convention, melding
                   tradition with innovation. Oudh, celebrated for its intricate
                   nature, reinvents the commonplace into something remarkable.
                   Envision yourself amidst an autumnal tableau, enveloped by
@@ -71,7 +71,7 @@ export default function AutumnComponent() {
                   autumnal charm.
                 </div>
                 <button className="absolute bottom-0 left-0 z-[56] h-9 w-[75%] bg-white text-black">
-                  Get Fleur d'Homme Autumn.
+                  Get Fleur d&apos;Homme Autumn.
                 </button>
               </div>
             </Parallax>

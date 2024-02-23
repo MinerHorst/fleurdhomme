@@ -19,11 +19,11 @@ export default function WinterPerfumeComponent() {
         <div className="montserrat flex h-[60vh] bg-black text-center">
           Fleur d&apos;Homme Winter embodies the essence of pristine glacial ice
           water, artfully blended with the allure of oudh. This harmonious
-          fusion creates a fragrance that captures the purity of winter's
+          fusion creates a fragrance that captures the purity of winter&apos;s
           embrace and the captivating depth of ancient forests. With its elegant
-          composition and luxurious presentation, Fleur d'Homme Winter invites
-          you on a journey of sensory delight, where cool freshness meets warm
-          sophistication.
+          composition and luxurious presentation, Fleur d&apos;Homme Winter
+          invites you on a journey of sensory delight, where cool freshness
+          meets warm sophistication.
         </div>
       </div>
       <div className="col-span-1 col-start-3 flex flex-col justify-end">

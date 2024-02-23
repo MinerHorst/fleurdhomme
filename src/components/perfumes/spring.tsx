@@ -63,7 +63,7 @@ export default function SummerComponent() {
                   a new dimension of springtime allure.
                 </div>
                 <button className="absolute bottom-0 left-0 z-[56] h-9 w-[75%] bg-white text-black">
-                  Get Fleur d'Homme Spring.
+                  Get Fleur d&apos;Homme Spring.
                 </button>
               </div>
             </Parallax>
