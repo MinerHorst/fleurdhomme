@@ -3,14 +3,17 @@ import ParallaxText from "../parallax";
 
 export default function WinterComponent() {
   return (
-    <section className="relative z-[60] grid h-screen w-screen grid-cols-6 grid-rows-6 bg-black text-white">
-      <div className="col-span-6 row-span-1 justify-between py-2">
-        <ParallaxText fontsize={50} baseVelocity={-1}>
-          Fleur d&apos;Homme
-        </ParallaxText>
-        <ParallaxText baseVelocity={1}>Autumn</ParallaxText>
-      </div>
-      <div className="col-span-2 row-span-5 row-start-2"></div>
-    </section>
+    <>
+      <section className="relative z-[55] flex h-[50vh] w-screen flex-col bg-black text-white">
+        <div className="z-50 flex h-fit w-screen flex-col items-center overflow-hidden">
+          <ParallaxText fontsize={250} baseVelocity={0}>
+            Fleur d&apos;Homme
+          </ParallaxText>
+          <ParallaxText fontsize={100} baseVelocity={0}>
+            Winter Winter
+          </ParallaxText>
+        </div>
+      </section>
+    </>
   );
 }

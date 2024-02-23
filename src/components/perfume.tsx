@@ -4,10 +4,11 @@ import SummerComponent from "./perfumes/summer";
 import AutumnComponent from "./perfumes/autumn";
 import WinterComponent from "./perfumes/winter";
 import SummerPerfumeComponent from "./perfumes/summerperfume";
+import WinterPerfumeComponent from "./perfumes/winterperfume";
 
 export default function PerfumeComponent() {
   return (
-    <div className="w-screen">
+    <div className="h-full w-screen">
       <div className="">
         <SpringComponent />
       </div>
@@ -17,12 +18,16 @@ export default function PerfumeComponent() {
       <div className="h-[350vh]">
         <SummerPerfumeComponent />
       </div>
-      <div className="sticky top-0 z-[52] h-[150vh]">
+      <div className="">
         <AutumnComponent />
       </div>
-      <div>
+      <div className="sticky top-0 z-[55] h-[50vh]">
         <WinterComponent />
       </div>
+      <div className="sticky top-0 z-[56] h-[100vh]">
+        <WinterPerfumeComponent />
+      </div>
+      <div className="h-[50vh] bg-black"></div>
     </div>
   );
 }

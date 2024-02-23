@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import clouds from "../../public/clouds.png";
+import sample from "../../public/sample.png";
 
 export default function SampleComponent() {
   return (
@@ -19,8 +20,14 @@ export default function SampleComponent() {
           How do I find the one that fits me best?
         </div>
       </div>
-      <div className="z-20 grid h-[30%] w-[80%] grid-cols-5 border">
-        <div className="col-span-4 col-start-2 border"></div>
+      <div className="z-20 grid h-[30%] w-[80%] grid-cols-5">
+        <div className="col-span-4 flex">
+          <div className="flex flex-col">
+            <button className="h-15 montserrat bg-white p-3 text-black">
+              Order our special samples.
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );

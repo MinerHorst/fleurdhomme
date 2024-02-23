@@ -1,8 +1,9 @@
 import React from "react";
 import ParallaxText from "../parallax";
 import Image from "next/image";
-import springperfume from "../../../public/springperfume.png";
+import springperfume from "../../../public/magazine.png";
 import { Parallax } from "react-scroll-parallax";
+import spring from "../../../public/spring.png";
 
 export default function SummerComponent() {
   return (
@@ -22,7 +23,7 @@ export default function SummerComponent() {
               speed={5}
               className="flex h-full flex-col justify-between space-y-2"
             >
-              <div className="h-[50%] border">
+              <div className="h-[50%]">
                 <Image
                   src={springperfume}
                   className="h-full w-full"
@@ -43,7 +44,7 @@ export default function SummerComponent() {
               speed={-5}
               className="relative flex h-full flex-col justify-between space-y-2"
             >
-              <div className="h-[50%] border">
+              <div className="h-[50%]">
                 <Image
                   src={springperfume}
                   className="h-full w-full"
@@ -69,14 +70,14 @@ export default function SummerComponent() {
           </div>
           <div className="col-span-1 h-[20vh] w-full md:h-[60vh] md:-rotate-[20deg] lg:h-screen">
             <Parallax speed={5} className="flex h-full flex-col space-y-2">
-              <div className="h-[50%] border">
+              <div className="h-[50%]">
                 <Image
                   src={springperfume}
                   className="h-full w-full"
                   alt="iamge of a nottel"
                 ></Image>
               </div>
-              <div className="h-[50%] border">
+              <div className="h-[50%]">
                 <Image
                   src={springperfume}
                   className="h-full w-full"
@@ -90,14 +91,14 @@ export default function SummerComponent() {
               speed={5}
               className="flex h-full flex-col justify-between space-y-2"
             >
-              <div className="h-[50%] border">
+              <div className="h-[50%]">
                 <Image
                   src={springperfume}
                   className="h-full w-full"
                   alt="iamge of a nottel"
                 ></Image>
               </div>
-              <div className="h-[50%] border">
+              <div className="h-[50%]">
                 <Image
                   src={springperfume}
                   className="h-full w-full"
@@ -108,8 +109,22 @@ export default function SummerComponent() {
           </div>
         </div>
         <div className="grid h-screen grid-cols-3 bg-black">
-          <div className="col-span-2 border"></div>
-          <div className="col-span-1 border"></div>
+          <div className="col-span-2">
+            <Image src={spring} alt="imag eof a perfume bottle"></Image>
+          </div>
+          <div className="montserrat relative col-span-1 space-y-4 px-2 text-white">
+            <p>
+              The Fleur d&apos;Homme Spring blend breaks free from the ordinary,
+              infusing the classic with the unexpected. Oudh, renowned for its
+              complexity, transforms the familiar into something extraordinary.
+              Picture yourself in a blossoming landscape, surrounded by vibrant
+              scents. Let our fragrance, with its crisp air and rich Oudh
+              undertones, transport you to a new dimension of springtime allure.
+            </p>
+            <button className="z-[56] h-9 w-[75%] bg-white text-black">
+              Get Fleur d'Homme Spring.
+            </button>
+          </div>
         </div>
         <div className="h-[50vh] bg-red-500 md:hidden"></div>
       </section>
