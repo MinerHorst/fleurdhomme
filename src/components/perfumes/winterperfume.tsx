@@ -1,11 +1,11 @@
 import React from "react";
-import winter1 from "../../../public/winter1.jpeg";
-import winter2 from "../../../public/winter2.jpeg";
+import winter1 from "../../../public/winter1.jpg";
+import winter2 from "../../../public/winter2.jpg";
 import Image from "next/image";
 
 export default function WinterPerfumeComponent() {
   return (
-    <section className="relative z-[56] grid h-[100vh] w-screen grid-cols-3 gap-4 overflow-x-hidden text-white">
+    <section className="relative z-[56] grid h-[100vh] w-screen grid-cols-3 overflow-x-hidden text-white">
       <div className="col-span-1 col-start-1 flex flex-col justify-end">
         <div className="h-[60vh]">
           <Image

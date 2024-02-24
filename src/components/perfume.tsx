@@ -24,10 +24,10 @@ export default function PerfumeComponent() {
       <div className="sticky top-0 z-[55] h-[50vh]">
         <WinterComponent />
       </div>
-      <div className="sticky top-0 z-[56] h-[100vh]">
+      <div className="z-[56]">
         <WinterPerfumeComponent />
       </div>
-      <div className="h-[50vh] bg-black"></div>
+      <div className="relative z-[65] h-screen w-screen bg-black"></div>
     </div>
   );
 }

@@ -257,3 +257,13 @@ img {
   display: block;
   margin-right: 30px;
 }
+
+.bg-text {
+  background-image: url("../../public/summer.jpg");
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: cover;
+  background-position: center;
+  display: inline-block; 
+}
