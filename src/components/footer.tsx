@@ -5,7 +5,7 @@ import logo from "../../public/logo.png";
 export default function FooterComponent() {
   return (
     <div>
-      <div className="justify-endpt-10 relative flex h-[98vh] w-screen flex-col items-center  text-white">
+      <div className="relative flex h-screen w-screen flex-col items-center justify-end text-white">
         <Image src={logo} alt="logo" className="w-[75vh]"></Image>
         <h2 className="montserrat z-50 space-y-4 text-center">
           <p className="text-white [font-size:_clamp(1em,3vw,5em)]">

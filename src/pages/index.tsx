@@ -62,7 +62,6 @@ export default function Home() {
         <InformationComponent />
         <PerfumeComponent />
         <SampleComponent />
-        <FooterComponent />
       </main>
     </>
   );
