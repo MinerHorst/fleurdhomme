@@ -19,8 +19,10 @@ export default function SampleComponent() {
           <div className="w-fit font-bold leading-none md:[font-size:_clamp(2em,11vw,15em)]">
             Fleur d&apos;Homme
           </div>
+          <div className="">
+            Where scents linger even after the first spray.
+          </div>
         </div>
-        <div className="">Where scents linger even after the first spray.</div>
       </div>
       <div className="montserrat z-[20] flex h-[30%] w-[80%] flex-col justify-end">
         <div className="flex h-[25%] w-full justify-between">
