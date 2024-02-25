@@ -17,7 +17,7 @@ export default function SampleComponent() {
         <div>
           <div>Welcome to the world of</div>
           <div className="w-fit font-bold leading-none md:[font-size:_clamp(2em,11vw,15em)]">
-            Fleur d'Homme
+            Fleur d&apos;Homme
           </div>
         </div>
 

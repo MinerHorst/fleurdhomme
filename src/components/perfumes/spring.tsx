@@ -104,7 +104,7 @@ export default function SummerComponent() {
         <div className="grid h-screen grid-cols-3 bg-black">
           <div className="col-span-2 col-start-2 flex flex-col justify-center">
             <h1 className="montserrat text-white [font-size:_clamp(3em,4vw,12em)]">
-              Enter a new era of spring perfumes with Fleur d'Homme.
+              Enter a new era of spring perfumes with Fleur d&apos;Homme.
             </h1>
             <div className="montserrat grid h-[50%] w-full grid-cols-4 grid-rows-2 gap-3">
               <div className="montserrat col-span-2 row-start-1 text-white">
