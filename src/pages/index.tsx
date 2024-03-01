@@ -6,6 +6,9 @@ import { useState } from "react";
 import FooterComponent from "~/components/footer";
 import SampleComponent from "~/components/sample";
 
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
+
 const MAX_HOVER_HISTORY = 10;
 
 export default function Home() {
@@ -41,6 +44,9 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <SpeedInsights />
+      <Analytics />
+
       <div className="cursor">
         <div className="cursor__inner">
           {Array.from({ length: 25 * 25 }).map((_, index) => {
